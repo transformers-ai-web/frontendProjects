@@ -20,11 +20,11 @@ await page.$('#login_Layer')
         await page.waitForSelector(selector);
         //const email = await page.$(selector);
         console.log("got the email input");
-        await page.type(selector, 'mjain1996@gmail.com', { delay:100 });
+        await page.type(selector, '', { delay:100 });
 
         const selector2 = 'input[type="password"]';
         await page.waitForSelector(selector2);
-        await page.type(selector2, '$pupeteer#remote-job', { delay:100 });
+        await page.type(selector2, '', { delay:100 });
 
         await page.waitForTimeout(5000);
 
