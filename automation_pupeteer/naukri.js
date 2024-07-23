@@ -41,7 +41,7 @@ await page.$('#login_Layer')
         //const completeProfile = await page.$('.view-profile-wrapper"]'); -  working
         await page.waitForTimeout(5000);
         //const completeProfile = 
-        await page.$('a[href="/mnjuser/profile').then(async (ele) => {
+        await page.$('a[href="PUT IN respective value for anchor tag on home button, refrence - complete profile"]').then(async (ele) => {
             console.log(ele);
             await ele.click().then(()=> console.log("Congrats you got the profile"))
         }).catch((err)=> console.log("error while fetching the profile", err))
